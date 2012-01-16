@@ -45,7 +45,7 @@ App.SubModule = function(){
   privates = {};
 
   //Constructor - inherits from App.ClassName
-  publics = App.ModuleName();
+  publics = new App.ModuleName();
 
   //Define additional public methods and variables
   publics.methodName = function(){};
@@ -56,5 +56,5 @@ App.SubModule = function(){
 // Everything in this section scoped to <html> ID
 App.htmlID('index', function(){
   //Instatiate a module object
-  var myModule = App.SubModule();
+  var myModule = new App.SubModule();
 });

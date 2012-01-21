@@ -17,7 +17,7 @@ window.App = window.App || {};
 App.htmlID = function(id, fn){
   $(function(){
     var htmlID = App.htmlID;
-    if(htmlID.value !== undefined){ htmlID.value = $('html').attr('id'); }
+    if(htmlID.value === undefined){ htmlID.value = $('html').attr('id'); }
     if(htmlID.value === id){ fn(); }
   });
 };

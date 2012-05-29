@@ -7,7 +7,6 @@ if(isset($page_class)){ echo ' class="' . $page_class . '"'; }
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="keywords" content="">
   <meta name="author" content="Andrew Appleton - http://floatleft.com">
   <title><?php if(isset($page_title)){
                 echo $page_title . ' | ';
